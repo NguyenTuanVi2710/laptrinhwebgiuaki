@@ -1,0 +1,75 @@
+nav {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 10;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: black;
+  }
+
+
+  #footer{
+    width: 100%;
+    background: black;
+    height: 322px;
+    margin-top: 338px;
+    padding: 0px 63px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    color:aliceblue;
+  }
+  #footer .box{
+    width: 450px;
+  }
+  #footer .box h2{
+    font-size: 25px;
+    color:red;
+  }
+  #footer .box p{
+    font-size: 20px;
+  }
+  #footer .box .quick-menu{
+    margin-top: 12px;
+  }
+  #footer .box .quick-menu .item{
+    margin-block-start: 14px;
+  }
+  #footer .box .quick-menu .item a{
+    color:aliceblue;
+    text-decoration: none;
+  }
+  #footer .box form input{
+    width: 294px;
+    height: 42px;
+    background: white;
+    padding-left: 20px;
+    color:black;
+    margin-top: 10px;
+  }
+  #footer .box form button{
+    background: white;
+    box-shadow: 5px 5px 4px black;
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+  }
+  #footer .box form button:hover {
+    background: red;
+  }

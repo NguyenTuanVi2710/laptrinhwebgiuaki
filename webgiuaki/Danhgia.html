@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Đánh giá sản phẩm</title>
+    <link rel="stylesheet" href="Danhgia.css">
+    <style>
+        .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.danh-sach-binh-luan {
+    margin-top: 20px;
+}
+
+.binh-luan {
+    border: 1px solid #dc2a2a;
+    padding: 10px;
+    margin-bottom: 10px;
+ 	background: blanchedalmond;
+}
+
+.ten-nguoi-dung {
+    font-weight: bold;
+}
+
+.thoi-gian {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.them-binh-luan {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    padding: 20px;
+  	background: black
+}
+
+.them-binh-luan h3 {
+    text-align: center;
+  color: rgb(185, 8, 38);
+}
+
+.them-binh-luan input,
+.them-binh-luan textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.them-binh-luan button {
+    background-color: #f5f2f2;
+    color: #060606;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+    <body font-family: Montserrat, sans-serif;>
+  
+        <div id="wrapper">
+      <div id="header">
+       
+      <div id="menu">
+     <nav>
+      <ul>
+        <li><a href="Nguyentuanvi.html">TRANG CHỦ</a></li>
+        <li><a href="Thucdon.html">THỰC ĐƠN</a></li>
+        <li><a href="Gioithieu.html">GIỚI THIỆU</a></li>
+        <li><a href="Dathang.html">ĐẶT HÀNG</a></li>
+        <li><a href="#">ĐĂNG KÝ</a></li>
+        <li><a href="#">ĐĂNG NHẬP</a></li>
+        <li><a href="#">ĐÁNH GIÁ</a></li>
+      </ul>
+      
+        </nav>
+    <div class="container">
+        <h1>Đánh giá sản phẩm</h1>
+        
+        <div class="them-binh-luan">
+            <h3>Thêm bình luận của bạn</h3>
+            <form action="#">
+                <input type="text" name="ten-nguoi-dung" placeholder="Tên của bạn">
+                <textarea name="noi-dung" placeholder="Nội dung bình luận"></textarea>
+                <button type="submit">Gửi bình luận</button>
+              <div class="danh-sach-binh-luan">
+            <div class="binh-luan">
+                <p class="ten-nguoi-dung"><b>@Nguyễn Tuấn Vĩ cute phô mai que</b></p>
+                <p class="thoi-gian"><i>21:56 Thứ 6 ngày 09/09/2021</i></p>
+                <p class="noi-dung">
+                    Món ăn rất ngon và vô cùng tiện lợi, tôi chỉ cần với 1 chiếc điện thoại đã có thể book các món ăn mình thích với các nguyên liệu đã được chuẩn bị sẵn tôi chỉ việc nhận và nấu thôi.
+                </p>
+            </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="box">
+            <h2>CÔNG TY TNHH HEAFOOD</h2>
+            <p>Địa chỉ: 36 Lê Duẩn, Bến Nghé, Quận 1, Hồ Chí Minh</p>
+            <p>Điện thoại: (+84)946 799 369 [hotline]</p>
+            <p>Email: info@heafood.vn</p>
+            <p>Liên hệ kinh doanh: bussiness@heafood.vn</p>
+          </div>
+
+        <div class="box">
+            <h2>CÁC ĐIỀU KHOẢN VÀ ĐIỀU KIỆN</h2>
+            <p>Chính Sách Quy Định Chung</p>
+            <p>Quy Định Hình Thức Thanh Toán</p>
+            <p>Chính Sách Bảo Mật Thông Tin</p>
+        </div>
+
+        <div class="box">
+            <h2>LIÊN HỆ</h2>
+            <form action="">
+                <input type="email" placeholder="Địa chỉ email">
+                <button>Nhắn tin</button>
+            </form>
+        </div>
+    </div>
+ 
+  
+    <script>
+    const formThemBinhLuan = document.querySelector(".them-binh-luan form");
+const danhSachBinhLuan = document.querySelector(".danh-sach-binh-luan");
+
+formThemBinhLuan.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+
+  const tenNguoiDung = event.target.querySelector("input[name='ten-nguoi-dung']").value;
+  const noiDung = event.target.querySelector("textarea[name='noi-dung']").value;
+
+
+  const thoiGianHienTai = new Date().toLocaleString();
+
+
+  const binhLuanMoi = document.createElement("div");
+  binhLuanMoi.classList.add("binh-luan");
+
+  binhLuanMoi.innerHTML = `
+    <p class="ten-nguoi-dung"><b>${tenNguoiDung}</b></p>
+    <p class="thoi-gian"><i>${thoiGianHienTai}</i></p>
+    <p class="noi-dung">${noiDung}</p>
+  `;
+  danhSachBinhLuan.appendChild(binhLuanMoi);
+
+
+  event.target.querySelector("textarea[name='noi-dung']").value = "";
+});
+
+    </script>
+</body>
+</html>

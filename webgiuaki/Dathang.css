@@ -1,0 +1,281 @@
+a{
+    text-decoration: none;
+    color:aliceblue;
+  }
+  header{
+    display:flex;
+    padding: 0px 20px;
+    justify-content:space-between;
+    background-color:black;
+  }
+  header ul.menu{
+    display:flex;
+    list-style: none;
+  }
+  header ul.menu>li{
+    Padding: 10px 50px;
+    position:relative;
+  }
+  header ul.menu>li a:hover{
+    color: red;
+  }
+  header ul.menu>li>ul{
+    position:absolute;
+    background-color: black;
+    list-style: none;
+    top: 40px;
+    width:150px;
+    display:none;
+  }
+  header ul.menu>li:hover>ul{
+    display:block;
+  }
+  header ul.menu>li>ul>li{
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+  #banner{
+    width: 100%px;
+    background-image: url("https://cdn.fleetfeet.com/assets/Blog/Mastheads/post-run-foods.jpg/dynamic:1-aspect:2.4-fit:cover-strategy:entropy/post-run-foods--1440.jpg");
+    height: 500px;
+    margin-top: 1px;
+    display: flex;
+    color:white;
+    padding: 0px 100px;
+    position:relative;
+    font-size:xx-large;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+  }
+  #Banner .box-center {
+    width: 100%;
+  }
+  #banner .box-center button{
+    width: 191px;
+    height: 40px;
+    margin-top: 41px;
+    background: red;
+    border: none;
+    outline: none;
+    color:aliceblue;
+    font-weight: blod;
+    font-size: 25px;
+    border-radius: 20px;
+    transition: 0.4;
+    font-family: Montserrat, sans-serif;
+  }
+  #banner .box-center button:hover {
+    background: black;
+    transform: scale(1.1);
+  }
+  #wp-products{
+    padding-top: 80px;
+    padding-bottom: 78px;
+    padding-left: 134px;
+    padding-right: 134px;
+  }
+  #wp-products h1{
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 32px;
+    color: red;
+    font-family: Montserrat, sans-serif;
+  } 
+  #list-products{
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #list-products .item{
+    width: 330px;
+    height: 360px;
+    background: red;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    color:aliceblue;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.5s;
+  }
+  #list-products .item:hover{
+    transform: scale(1.1);
+  }
+  #list-products .item img{
+    width: 330px;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 0px;
+    border-radius: 15px;
+  }
+  #list-products .item .name{
+    color:aliceblue;
+    font-weight: blod;
+    margin-top: 15px;
+    font-size: 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  #list-products .item .price{
+    color:black;
+    font-weight: blod;
+    font-size: 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  #list-products .item .desc{
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+  }
+  
+  
+  #saleoff{
+    width:100%;
+    display: flex;
+    height: 322px;
+  }
+  #saleoff .box-left ,#saleoff .box-right{
+    width: 50%;
+  }
+  #saleoff .box-left{
+    background:rgb(94, 96, 98);
+    text-align: center;
+    min-height: 322px;
+  }
+  #saleoff .box-left h1{
+    padding-top: 38px;
+  }
+  #saleoff .box-left span:nth-child(1)
+  {
+    color: white;
+    font-size: 80px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  #saleoff .box-left span:nth-child(2)
+  {
+    color: orange;
+    font-size: 140px;
+    font-family: Montserrat, sans-serif;
+  }
+  #saleoff .box-right{
+    background-image:url("https://images2.thanhnien.vn/zoom/600_315/Uploaded/quochung.qc/2019_11_11/sx/1_BULO.jpg");
+  }
+  
+  
+  #wp-drink{
+    padding-top: 80px;
+    padding-bottom: 78px;
+    padding-left: 134px;
+    padding-right: 134px;
+  }
+  #wp-drink h1{
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 32px;
+    color: red;
+    font-family: Montserrat, sans-serif;
+  } 
+  #list-drink{
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #list-drink .item{
+    width: 330px;
+    height: 360px;
+    background: red;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    color:aliceblue;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.5s;
+  }
+  #list-drink .item:hover{
+    transform: scale(1.1);
+  }
+  #list-drink .item img{
+    width: 330px;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 0px;
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+  #list-drink .item .name{
+    color:aliceblue;
+    font-weight: blod;
+    margin-top: 25px;
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
+  }
+  #list-drink .item .price{
+    color:black;
+    font-weight: blod;
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
+  }
+  #list-drink .item .desc{
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  
+  #footer{
+    width: 100%;
+    background: black;
+    height: 322px;
+    margin-top: 338px;
+    padding: 0px 63px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    color:aliceblue;
+    font-family: Montserrat, sans-serif;
+  }
+  #footer .box{
+    width: 450px;
+  }
+  #footer .box h2{
+    font-size: 25px;
+    color:red;
+    font-family: Montserrat, sans-serif;
+  }
+  #footer .box p{
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+  }
+  #footer .box .quick-menu{
+    margin-top: 12px;
+  }
+  #footer .box .quick-menu .item{
+    margin-block-start: 14px;
+  }
+  #footer .box .quick-menu .item a{
+    color:aliceblue;
+    text-decoration: none;
+  }
+  #footer .box form input{
+    width: 294px;
+    height: 42px;
+    background: white;
+    padding-left: 20px;
+    color:black;
+    margin-top: 10px;
+  }
+  #footer .box form button{
+    background: white;
+    box-shadow: 5px 5px 4px black;
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+  }
+  #footer .box form button:hover {
+    background: red;
+  }
